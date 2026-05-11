@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Entry</title>
+<link rel="stylesheet" href="css/style.css"></head>
+<body><div class="container">
+<h2>Entry</h2>
+<label>Type</label>
+<select id="type"><option>Display</option><option>Target</option></select>
+<label>Company</label><select id="companySelect"></select>
+<label>Brand</label><select id="brandSelect"></select>
+<label>Stores (Ctrl+Click for multiple)</label><select id="storeSelect" multiple size="4"></select>
+<label>Sales Target</label><input id="salesTarget" type="number">
+<label>Brand Target %</label><input id="brandPercent" type="number">
+<label>Brand Target Amount</label><input id="brandAmount" type="number">
+<label>Remarks</label><textarea id="remarks"></textarea>
+<button onclick="saveEntry()">Save Entry</button>
+<button onclick="exportCSV()">Export to Excel (CSV)</button>
+<p><a href="index.html">Back</a></p>
+</div><script src="js/app.js"></script></body></html>
